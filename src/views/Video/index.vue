@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <!-- 一级路由 -->
-    <router-view></router-view>
-  </div>
+  <div>myvideos</div>
 </template>
 
 <script>
 export default {
+  name: 'myvideo',
   created () { },
   data () {
     return {}

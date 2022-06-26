@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <!-- 一级路由 -->
-    <router-view></router-view>
-  </div>
+  <div>quest</div>
 </template>
 
 <script>
 export default {
+  name: 'Quest',
   created () { },
   data () {
     return {}

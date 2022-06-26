@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <!-- 一级路由 -->
-    <router-view></router-view>
-  </div>
+  <div>my</div>
 </template>
 
 <script>
 export default {
+  name: 'my',
   created () { },
   data () {
     return {}
@@ -19,5 +17,5 @@ export default {
 }
 </script>
 
-<style scoped lang='less'>
+<style scoped>
 </style>
