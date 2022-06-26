@@ -18,9 +18,10 @@
           },
         ]"
       >
-        <template #left-icon>
+        <!-- <template #left-icon>
           <i class="toutiao toutiao-shouji"></i>
-        </template>
+        </template> -->
+        <MyIcon name="shouji" slot="left-icon"></MyIcon>
       </van-field>
       <van-field
         v-model.trim="code"
@@ -33,9 +34,7 @@
         ]"
       >
         <!-- 前半部的字体图标插槽 -->
-        <template #left-icon>
-          <i class="toutiao toutiao-yanzhengma"></i>
-        </template>
+        <MyIcon name="yanzhengma" slot="left-icon"></MyIcon>
         <!-- 后半部分的发送验证码插槽 -->
         <template #button>
           <van-button
@@ -113,10 +112,7 @@ export default {
 </script>
 
 <style scoped lang='less'>
-.toutiao {
-  font-size: 37px;
-  margin-right: 40px;
-}
+
 .sendSms {
   width: 152px;
   height: 46px;
