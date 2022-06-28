@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-nav-bar title="登录">
+    <van-nav-bar title="登录" @click-left="$router.back()">
       <van-icon name="cross" slot="left" />
     </van-nav-bar>
     <!-- 表单 -->
@@ -68,7 +68,7 @@ export default {
   created () { },
   data () {
     return {
-      mobile: '13911111111',
+      mobile: '15738829758',
       code: '246810',
       time: 5 * 1000,
       isCountDone: true
@@ -81,6 +81,7 @@ export default {
         console.log(res.data)
         this.$store.commit('setUser', res.data)
         this.$toast.success('登录成功')
+        this.$router.push('/')
       } catch (error) {
         this.$toast.fail('提交失败')
       }
@@ -112,7 +113,6 @@ export default {
 </script>
 
 <style scoped lang='less'>
-
 .sendSms {
   width: 152px;
   height: 46px;

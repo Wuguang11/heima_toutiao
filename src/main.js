@@ -7,8 +7,8 @@ import 'vant/lib/index.less'
 import MyIcon from '@/components/MyIcon.vue'
 // 适配
 import 'amfe-flexible'
-// 字体图标
-import '@/styles/icon.less'
+// 全局样式
+import '@/styles/index.less'
 Vue.use(Vant)
 // 全局图标
 Vue.component('MyIcon', MyIcon)
@@ -16,6 +16,5 @@ Vue.config.productionTip = false
 new Vue({
   router,
   store,
-
   render: h => h(App)
 }).$mount('#app')
