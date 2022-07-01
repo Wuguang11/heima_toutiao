@@ -1,6 +1,9 @@
 <template>
   <div>
-    <router-view class="main" />
+    <!-- 将home 缓存起来  include值意要和要缓存的组件的name属性一致 -->
+    <keep-alive :include="['home']">
+      <router-view class="main" />
+    </keep-alive>
 
     <van-tabbar route>
       <van-tabbar-item replace to="/home">
@@ -46,6 +49,7 @@ export default {
 }
 .main {
   padding-bottom: 100px;
-  background-color:  #f5f7f9;
+  background-color: #f5f7f9;
 }
+
 </style>
