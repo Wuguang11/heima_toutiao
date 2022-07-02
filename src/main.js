@@ -11,7 +11,6 @@ import 'amfe-flexible'
 import '@/styles/index.less'
 // 一次性把filters中所有的按需导出全部导出作为obj的属性
 import * as obj from '@/filters'
-console.log(obj)
 Object.keys(obj).forEach(key => {
   Vue.filter(key, obj[key])
 })
