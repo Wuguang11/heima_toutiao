@@ -53,7 +53,7 @@ export default {
       scrollTop = this.scrollTop
     })
   },
-  // keepalive的生命周期
+  // alive的生命周期
   activated () {
     // 跳到记住的滚动位置
     ele.scrollTop = scrollTop

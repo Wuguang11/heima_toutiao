@@ -95,7 +95,7 @@ export default {
           return
         }
         // 删除
-        const obj = this.recommandList[index]
+        const obj = this.myChannelList[index]
         this.myChannelList.splice(index, 1)
         this.recommandList.push(obj)
         // 解决点击前面的不能自己显示高亮的问题

@@ -9,8 +9,11 @@ import MyIcon from '@/components/MyIcon.vue'
 import 'amfe-flexible'
 // 全局样式
 import '@/styles/index.less'
+// 导入全局注册组件
+import '@/components'
 // 一次性把filters中所有的按需导出全部导出作为obj的属性
 import * as obj from '@/filters'
+import FollowUser from '@/components/FollowUser.vue'
 Object.keys(obj).forEach(key => {
   Vue.filter(key, obj[key])
 })
@@ -18,6 +21,7 @@ Vue.use(Vant)
 // 全局图标
 Vue.component('MyIcon', MyIcon)
 Vue.config.productionTip = false
+Vue.component(FollowUser.name, FollowUser)
 new Vue({
   router,
   store,
